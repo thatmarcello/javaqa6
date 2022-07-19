@@ -3,6 +3,7 @@ package ru.netology.stats;
 public class StatsService {
 
     //Сумма продаж
+    
     public int salesSum(int[] sales) {
         int sum = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -12,6 +13,7 @@ public class StatsService {
     }
 
     //Cредняя сумма продаж в месяц
+    
     public int avgSales(int[] sales) {
         int avg = salesSum(sales) / sales.length;
         return avg;
@@ -59,6 +61,7 @@ public class StatsService {
     }
 
     //Кол-во месяцев, в которых продажи были выше среднего
+    
     public int getMonthsSalesHigherAvg(int[] sales) {
         int monthsHighAvg = 0;
         int average = avgSales(sales);
